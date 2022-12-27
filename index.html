@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>超级工具箱</title>
+	<script src="js/wc-3.0.6.min.js"></script>
+    <script src="js/jq.js"></script>
+  </head>
+  <body>	
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    };
+  body{
+    background-color: #fcfcfc;
+    }
+  .header{
+    height:280px;
+    background-color:skyblue;
+    color:white;
+    text-align:center;
+    }
+  .header h1{
+    font-size:60px;
+    }
+  .header h3{
+    font-size:30px;
+    font-weight:250;
+    }
+  .box{
+    margin-top:100%;
+    overflow:hidden;
+    width:90%;
+    height:auto;
+    margin: 0 auto;
+    box-shadow:5px 5px 15px rgba(0,0,0,.7);
+    border-radius:10px;
+    }
+  .box .top img {
+    width:100%;
+    }
+  .c h1 {
+    font-size:22px;
+    font-weight:400;
+    }
+  .c {
+    padding: 5px 30px
+    }
+  </style>
+  <div class="header">
+  <h1>工具箱</h1>
+  <h3>超级工具箱</h3>
+  </div>
+  <div class="body">
+  <div class="box">
+  <div class="top">
+  <img src="image/1.jpg"/>
+  
+  </div>
+  <div class="c">
+  <h1>第一个工具:生成手写体</h1>
+  <p>可以骗过老师，绝对可以，还可以选择纸和颜色，和手写体</p>
+  <a href="tool1.html">点我进入</a>
+  </div>
+  </div>
+  </div>
+    <div class="box">
+  <div class="top">
+  <img src="image/1.jpg"/>
+  </div>
+  <div class="c">
+  <h1>第二个工具:查询qq</h1>
+  <p>可以代替qq</p>
+  <a href="tool2.html">点击进入</a>
+  </div>
+  </div>
+  </div>
+  <div class="footer"></div>
+	<script>
+      
+   	  wc.alertDialog({
+        title: '这算是测试版',
+        content: '这只是测试版，老师误入',
+        ok: '确定',
+        okFun: function (){
+          wc.alert('好');      
+        }
+        
+      });
+    wc.read();
+	</script>
+  </body>
+</html>
